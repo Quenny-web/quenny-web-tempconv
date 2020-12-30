@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Temperature converter</title>
+</head>
+<body>
+           <h1>Temperature Converter</h1>
+            
+        
+        <h4>WELCOME TO OUR PAGE</h4>
+
+            <h5>You can convert your temperature here,all you have to do is input your value</h5>
+        
+                    
+            <p>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" placehoder="Fahrenheit.."
+                oninput="fahrenheitTemperatureConverterToCelsius(this.value)"
+                onchange="fahrenheitTemperatureConverterToCelsius(this.value)"
+               oninput="fahrenheitTemperatureConverterToKelvin(this.value)"
+                onchange="fahrenheitTemperatureConverterToKelvin(this.value)">
+            </p>
+
+            <p>
+                <p>Celsius: <span id="outputCelsius"></span></p>
+                <p>Kelvin: <span id="outputKelvin"></span></p>
+              <br></br>
+
+            </p>
+                <label> Celsius</label>
+                <input id="inputCelsius" type="number" placeholder="Celsius"
+                oninput="celsiusTemperatureConverterToFahrenheit(this.value)"
+                onchange="celsiusTemperatureConverterToFahrenheit(this.value)"
+                oninput="celsiusTemperatureCoverterToKelvin(this.value)"
+                onchange="celsiusTemperatureConverterToKelvin(this.value)">
+            </p>
+
+            <p>
+                <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+                <p>Kelvin: <span id="outputKelvin2"></span></p>
+            </p>
+              <br></br>
+
+            <p>
+                <label>Kelvin</label>
+                <input id="inputKelvin" type="number" placeholder="Kelvin"
+                oninput="kelvinTemperatureConverterToFahrenheit2(this.value)"
+                onchange="kelvinTemperatureConverterToFahrenheit2(this.value)"
+                oninput="kelvinTemperatureConverterToCelsius(this.value)"
+                onchange="kelvinTemperatureConverterToCelsius(this.value)">
+            </p>
+
+            <p>
+                <p>Fahrenheit: <span id="outputFahrenheit2"></span></p>
+                <p>Celsius <span id="outputCelsius2"></span></p>
+            </p>
+                   
+
+   <script src="app.js"></script> 
+    
+</body>
+</html>
